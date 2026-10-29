@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM ubuntu:latest
 COPY ./initialize.sql /root/
 
 RUN rm -f /etc/apt/sources.list.d/mysql.list && \
